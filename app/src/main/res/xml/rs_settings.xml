@@ -22,6 +22,10 @@
         android:title="Food Preference Assessment"/>
 
     <Preference
+        android:key="your_ava_assessment"
+        android:title="Self-Control Assessment"/>
+
+    <Preference
         android:key="set_notification_time"
         android:title="Set Notification Time"/>
 

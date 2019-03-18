@@ -1,0 +1,70 @@
+{
+  "type": "recurring",
+  "identifier": "sc_full",
+  "title": "Self-Control Survey",
+  "guid": "impluse-1",
+  "activity": {
+    "type": "elementList",
+    "identifier": "sc_full_assessment",
+    "optional": false,
+    "elements": [
+      {
+        "identifier"   : "introduction",
+        "type"         : "instruction",
+        "title"        : "Welcome to the Self-Control Assessment",
+        "text"         : "Please rate each activity as \nSeldom, Moderate, or Regular"
+      },
+
+      {
+        "identifier": "sc_full",
+        "type": "YADLFullAssessment",
+        "text": "Over the past week, how often do you feel this activity happens for you?",
+        "choices":[
+          {
+            "text":"Seldom",
+            "value":"seldom",
+            "color":"#258313"
+          },
+          {
+            "text":"Moderate",
+            "value":"moderate",
+            "color":"#F0743E"
+          },
+          {
+            "text":"Regular",
+            "value":"regular",
+            "color":"#D20005"
+          }
+        ],
+        "imageExtension": "jpeg",
+        "items": [
+          {
+            "imageTitle":"focus",
+            "description":"Hard to focus",
+            "identifier":"focus"
+          },
+          {
+            "imageTitle":"regret",
+            "description":"Regret",
+            "identifier":"regret"
+          }
+        ]
+      }
+    ]
+  },
+  "resultTransforms": [
+    {
+      "transform": "YADLFullRaw",
+      "inputMapping": [
+        {"parameter":"Focus", "stepIdentifier":"sc_full.focus"},
+        {"parameter":"Regret", "stepIdentifier":"sc_full.regret"},
+        {"parameter": "schemaID", "constant":{
+          "namespace": "Cornell",
+          "name": "sc-full-assessment",
+          "version": "2.0.0"
+        }
+        }
+      ]
+    }
+  ]
+}
