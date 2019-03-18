@@ -29,10 +29,10 @@ public class SplashActivity extends PinCodeActivity {
 
         this.sendBroadcast(TaskAlertReceiver.createSetNotificationIntent());
 
-        RSFirstRun firstRun = new RSFirstRun(this);
-        if (firstRun.getFirstRun() == null || !firstRun.getFirstRun()) {
-            RSFileAccess.getInstance().clearFileAccess(this);
-        }
+        //RSFirstRun firstRun = new RSFirstRun(this);
+        //if (firstRun.getFirstRun() == null || !firstRun.getFirstRun()) {
+        //    RSFileAccess.getInstance().clearFileAccess(this);
+        //}
 
         this.launchMainActivity();
 
