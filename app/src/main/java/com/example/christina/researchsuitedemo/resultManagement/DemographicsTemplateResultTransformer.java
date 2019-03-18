@@ -37,18 +37,18 @@ public class DemographicsTemplateResultTransformer implements RSRPFrontEnd {
 //        Integer age = extractResult(parameters,"age");
 //        String zipcode = extractResult(parameters,"zip_code");
 
-        String icecream = extractResult(parameters,"icecream");
+        String coffee = extractResult(parameters,"coffee");
         String food = extractResult(parameters,"food");
 
         DemographicsTemplateResult result = new DemographicsTemplateResult(
                 UUID.randomUUID(),
                 taskIdentifier,
                 taskRunUUID,
-                icecream,
+                coffee,
                 food
         );
 
-        StepResult firstStepResult = (StepResult) (parameters.get("icecream") != null ? parameters.get("icecream") : parameters.get("food"));
+        StepResult firstStepResult = (StepResult) (parameters.get("coffee") != null ? parameters.get("coffee") : parameters.get("food"));
         //StepResult lastStepResult = (StepResult) (parameters.get("employment") != null ? parameters.get("employment") : parameters.get("gender"));
 
         if (firstStepResult != null) {

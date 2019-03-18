@@ -1,0 +1,59 @@
+{
+  "type": "recurring",
+  "identifier": "template",
+  "title": "Template title",
+  "guid": "template-1",
+  "activity": {
+    "type": "elementList",
+    "identifier": "template",
+    "elements":[
+      {
+        "identifier": "coffee",
+        "type": "singleChoiceText",
+        "text": "What coffee do you like?",
+        "items": [
+          {
+            "prompt": "Cappuccino ",
+            "value": "cappuccino"
+          },
+          {
+            "prompt": "Latte",
+            "value": "latte"
+          },
+          {
+            "prompt": "Double Espresso",
+            "value": "double_espresso"
+          }
+        ]
+      },
+      {
+        "identifier": "food",
+        "type": "textfield",
+        "text": "What did you eat today?"
+      }
+    ]
+  },
+  "resultTransforms":[
+    {
+      "transform":"DemographicsTemplate",
+      "inputMapping":[
+        {
+          "stepIdentifier": "coffee",
+          "parameter": "coffee"
+        },
+        {
+          "stepIdentifier": "food",
+          "parameter": "food"
+        },
+        {
+          "parameter": "schemaID",
+          "constant": {
+            "namespace": "Cornell",
+            "name": "rs-survey",
+            "version": "1.0.0"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -35,14 +35,14 @@ public class DemographicsTemplateResult extends RSRPIntermediateResult {
 //    private Integer age;
 //    private String zipcode;
 
-    private String icecream;
+    private String coffee;
     private String food;
 
 
-    public DemographicsTemplateResult(UUID uuid, String taskIdentifier, UUID taskRunUUID, String icecream, String food) {
+    public DemographicsTemplateResult(UUID uuid, String taskIdentifier, UUID taskRunUUID, String coffee, String food) {
         super(TYPE, uuid, taskIdentifier, taskRunUUID);
 
-        this.icecream = icecream;
+        this.coffee = coffee;
         this.food = food;
 
 //        this.gender = gender;
@@ -61,8 +61,8 @@ public class DemographicsTemplateResult extends RSRPIntermediateResult {
 //        return zipcode;
 //    }
 
-    public String getIcecream() {
-        return icecream;
+    public String getCoffee() {
+        return coffee;
     }
 
     public String getFood() {
@@ -94,7 +94,7 @@ public class DemographicsTemplateResult extends RSRPIntermediateResult {
 //            Integer age = extractResult(parameters,"age");
 //            String zipcode = extractResult(parameters,"zip_code");
 
-            String icecream = extractResult(parameters,"icecream");
+            String coffee = extractResult(parameters,"coffee");
             String food = extractResult(parameters,"food");
 
 
@@ -103,11 +103,11 @@ public class DemographicsTemplateResult extends RSRPIntermediateResult {
                     UUID.randomUUID(),
                     taskIdentifier,
                     taskRunUUID,
-                    icecream,
+                    coffee,
                     food
             );
 
-            StepResult firstStepResult = (StepResult) (parameters.get("icecream") != null ? parameters.get("icecream") : parameters.get("food"));
+            StepResult firstStepResult = (StepResult) (parameters.get("coffee") != null ? parameters.get("coffee") : parameters.get("food"));
 
 //            StepResult firstStepResult = (StepResult) (parameters.get("days_on_campus") != null ? parameters.get("days_on_campus") : parameters.get("travel_plans"));
 //            StepResult lastStepResult = (StepResult) (parameters.get("travel_plans") != null ? parameters.get("travel_plans") : parameters.get("days_on_campus"));

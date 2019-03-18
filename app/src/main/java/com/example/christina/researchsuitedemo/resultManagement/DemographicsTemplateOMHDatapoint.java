@@ -51,7 +51,7 @@ public class DemographicsTemplateOMHDatapoint extends OMHDataPointBuilder {
 
     public JSONObject getBody() {
         HashMap map = new HashMap();
-        map.put("icecream", this.surveyResult.getIcecream());
+        map.put("coffee", this.surveyResult.getCoffee());
         map.put("food", this.surveyResult.getFood());
         return new JSONObject(map);
     }

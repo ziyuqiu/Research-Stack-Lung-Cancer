@@ -18,6 +18,10 @@
         android:title="Take Demographics Assessment"/>
 
     <Preference
+        android:key="your_demo_assessment"
+        android:title="Food Preference Assessment"/>
+
+    <Preference
         android:key="set_notification_time"
         android:title="Set Notification Time"/>
 

@@ -28,12 +28,11 @@ public class OnboardingActivity extends RSActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //RSActivityManager.get().queueActivity(this, "DemographicsSurvey", true);
-        //RSActivityManager.get().queueActivity(this, "NotificationDateSurvey", true);
-        //RSActivityManager.get().queueActivity(this, "LocationSurvey", true);
-        //RSActivityManager.get().queueActivity(this, "PAMSurvey", true);
-        //RSActivityManager.get().queueActivity(this, "YADLFullSurvey", true);
-        //RSActivityManager.get().queueActivity(this, "YADLSpotSurvey", true);
+        RSActivityManager.get().queueActivity(this, "NotificationDateSurvey", true);
+        RSActivityManager.get().queueActivity(this, "DemographicsSurvey", true);
+        RSActivityManager.get().queueActivity(this, "PAMSurvey", true);
+        RSActivityManager.get().queueActivity(this, "YADLFullSurvey", true);
+        RSActivityManager.get().queueActivity(this, "YADLSpotSurvey", true);
     }
 
 

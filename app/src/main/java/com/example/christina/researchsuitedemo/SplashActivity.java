@@ -29,25 +29,21 @@ public class SplashActivity extends PinCodeActivity {
 
         this.sendBroadcast(TaskAlertReceiver.createSetNotificationIntent());
 
-        //RSFirstRun firstRun = new RSFirstRun(this);
-        //if (firstRun.getFirstRun() == null || !firstRun.getFirstRun()) {
-        //    RSFileAccess.getInstance().clearFileAccess(this);
-        //}
+        RSFirstRun firstRun = new RSFirstRun(this);
+        if (firstRun.getFirstRun() == null || !firstRun.getFirstRun()) {
+            RSFileAccess.getInstance().clearFileAccess(this);
+        }
 
-        this.launchMainActivity();
-
-
-       // uncomment to enable LS2 login step
-//        LS2Manager.getInstance().setCredentialStoreUnlocked(true);
-//        if (firstRun.getFirstRun() != null &&
-//                firstRun.getFirstRun() &&
-//                this.isSignedIn()) {
-//            this.launchMainActivity();
-//        }
-//        else {
-//            firstRun.setFirstRun(true);
-//            this.launchLoginActivity();
-//        }
+        LS2Manager.getInstance().setCredentialStoreUnlocked(true);
+        if (firstRun.getFirstRun() != null &&
+                firstRun.getFirstRun() &&
+                this.isSignedIn()) {
+            this.launchMainActivity();
+        }
+        else {
+            firstRun.setFirstRun(true);
+            this.launchLoginActivity();
+        }
 
     }
 
