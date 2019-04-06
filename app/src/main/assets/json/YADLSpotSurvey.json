@@ -17,7 +17,7 @@
       {
         "identifier": "yadl_spot",
         "type": "YADLSpotAssessment",
-        "title": "Which activities did you have trouble with today?",
+        "title": "What color is most similar to your sputum today?",
         "somethingSelectedButtonColor":"#FF4081",
         "nothingSelectedButtonColor":"#FF4081",
         "itemCellSelectedColor":"#7FEE7D",
@@ -25,42 +25,32 @@
         "itemsPerRow":3,
         "itemMinSpacing":10.0,
         "filterKey": "activity_identifiers",
-        "imageExtension": "jpeg",
+        "imageExtension": "png",
         "items": [
           {
-            "imageTitle":"BedtoChair",
-            "description":"Bed To Chair",
-            "identifier":"BedtoChair"
+            "imageTitle":"SputumColor-0",
+            "description":"Clear",
+            "identifier":"SputumColor-0"
           },
           {
-            "imageTitle":"Dressing",
-            "description":"Dressing",
-            "identifier":"Dressing"
+            "imageTitle":"SputumColor-1",
+            "description":"Light Yellow",
+            "identifier":"SputumColor-1"
           },
           {
-            "imageTitle":"Housework",
-            "description":"Housework",
-            "identifier":"Housework"
+            "imageTitle":"SputumColor-2",
+            "description":"Yellow",
+            "identifier":"SputumColor-2"
           },
           {
-            "imageTitle":"Lifting",
-            "description":"Lift 10-pounds",
-            "identifier":"Lifting"
+            "imageTitle":"SputumColor-3",
+            "description":"Green",
+            "identifier":"SputumColor-3"
           },
           {
-            "imageTitle":"Shopping",
-            "description":"Shopping",
-            "identifier":"Shopping"
-          },
-          {
-            "imageTitle":"ShortWalk",
-            "description":"Talking a short walk",
-            "identifier":"ShortWalk"
-          },
-          {
-            "imageTitle":"WalkingupStairs",
-            "description":"Climbing Stairs",
-            "identifier":"WalkingupStairs"
+            "imageTitle":"SputumColor-4",
+            "description":"Pink or Red",
+            "identifier":"SputumColor-4"
           }
 
         ]
