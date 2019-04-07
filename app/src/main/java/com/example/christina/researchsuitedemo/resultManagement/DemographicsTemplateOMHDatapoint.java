@@ -51,8 +51,20 @@ public class DemographicsTemplateOMHDatapoint extends OMHDataPointBuilder {
 
     public JSONObject getBody() {
         HashMap map = new HashMap();
-        map.put("coffee", this.surveyResult.getCoffee());
-        map.put("food", this.surveyResult.getFood());
+//        map.put("coffee", this.surveyResult.getCoffee());
+//        map.put("food", this.surveyResult.getFood());
+        map.put("headache", this.surveyResult.getHeadache());
+        map.put("cough", this.surveyResult.getCough());
+        map.put("shortness_of_breath", this.surveyResult.getShortnessOfBreath());
+        map.put("cigarettes_count", this.surveyResult.getCigarettesCount());
+        map.put("body_temperature", this.surveyResult.getBodyTemperature());
+
+        map.put("fatigue", this.surveyResult.getFatigue());
+        map.put("nausea_or_vomiting", this.surveyResult.getNauseaOrVomiting());
+        map.put("appetite", this.surveyResult.getAppetite());
+        map.put("diarrhea", this.surveyResult.getDiarrhea());
+        map.put("bruise_or_bleeding", this.surveyResult.getBruiseOrBleeding());
+
         return new JSONObject(map);
     }
 }

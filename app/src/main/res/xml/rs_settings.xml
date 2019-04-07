@@ -17,6 +17,10 @@
         android:key="demographics_assessment"
         android:title="Take Demographics Assessment"/>
 
+    <Preference
+        android:key="survey"
+        android:title="Take Daily Survey"/>
+
     <!-- Preference
         android:key="your_demo_assessment"
         android:title="Food Preference Assessment" / -->

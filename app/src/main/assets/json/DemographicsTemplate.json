@@ -8,28 +8,156 @@
     "identifier": "template",
     "elements":[
       {
-        "identifier": "coffee",
+        "identifier": "headache",
         "type": "singleChoiceText",
-        "text": "What coffee do you like?",
+        "text": "Do you have a headache?",
         "items": [
           {
-            "prompt": "Cappuccino ",
-            "value": "cappuccino"
+            "prompt": "Yes",
+            "value": "true"
           },
           {
-            "prompt": "Latte",
-            "value": "latte"
-          },
-          {
-            "prompt": "Double Espresso",
-            "value": "double_espresso"
+            "prompt": "No",
+            "value": "false"
           }
         ]
       },
       {
-        "identifier": "food",
+        "identifier": "cough",
+        "type": "singleChoiceText",
+        "text": "Have you been coughing?",
+        "items": [
+          {
+            "prompt": "Yes, I've been coughing with sputum.",
+            "value": "true_sputum_present"
+          },
+          {
+            "prompt": "Yes, I've been coughing but without sputum.",
+            "value": "true_sputum_absent"
+          },
+          {
+            "prompt": "No",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "identifier": "shortness_of_breath",
+        "type": "singleChoiceText",
+        "text": "Do you experience shortness of breath?",
+        "items": [
+          {
+            "prompt": "Yes",
+            "value": "true"
+          },
+          {
+            "prompt": "No",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "identifier": "cigarettes_count",
+        "type": "singleChoiceText",
+        "text": "How many cigarettes did you consume today?",
+        "items": [
+          {
+            "prompt": "None",
+            "value": "0"
+          },
+          {
+            "prompt": "1-5",
+            "value": "1-5"
+          },
+          {
+            "prompt": "6-10",
+            "value": "6-10"
+          },
+          {
+            "prompt": "More than 10",
+            "value": ">10"
+          }
+        ]
+      },
+      {
+        "identifier": "body_temperature",
         "type": "textfield",
-        "text": "What did you eat today?"
+        "text": "What is your current body temperature in degrees Celsius?"
+      },
+      {
+        "identifier": "fatigue",
+        "type": "singleChoiceText",
+        "text": "Do you easily feel fatigued?",
+        "items": [
+          {
+            "prompt": "Yes",
+            "value": "true"
+          },
+          {
+            "prompt": "No",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "identifier": "nausea_or_vomiting",
+        "type": "singleChoiceText",
+        "text": "Have you experienced nausea or vomiting?",
+        "items": [
+          {
+            "prompt": "Yes",
+            "value": "true"
+          },
+          {
+            "prompt": "No",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "identifier": "appetite",
+        "type": "singleChoiceText",
+        "text": "How has your appetite been?",
+        "items": [
+          {
+            "prompt": "I barely have any appetite.",
+            "value": "bad"
+          },
+          {
+            "prompt": "I have good appetite.",
+            "value": "good"
+          }
+        ]
+      },
+      {
+        "identifier": "diarrhea",
+        "type": "singleChoiceText",
+        "text": "Have you experienced diarrhea?",
+        "items": [
+          {
+            "prompt": "Yes",
+            "value": "true"
+          },
+          {
+            "prompt": "No",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "identifier": "bruise_or_bleeding",
+        "type": "singleChoiceText",
+        "text": "Do you bruise or bleed easily?",
+        "items": [
+          {
+            "prompt": "Yes",
+            "value": "true"
+          },
+          {
+            "prompt": "No",
+            "value": "false"
+          }
+        ]
       }
     ]
   },
@@ -38,12 +166,44 @@
       "transform":"DemographicsTemplate",
       "inputMapping":[
         {
-          "stepIdentifier": "coffee",
-          "parameter": "coffee"
+          "stepIdentifier": "headache",
+          "parameter": "headache"
         },
         {
-          "stepIdentifier": "food",
-          "parameter": "food"
+          "stepIdentifier": "cough",
+          "parameter": "cough"
+        },
+        {
+          "stepIdentifier": "shortness_of_breath",
+          "parameter": "shortness_of_breath"
+        },
+        {
+          "stepIdentifier": "cigarettes_count",
+          "parameter": "cigarettes_count"
+        },
+        {
+          "stepIdentifier": "body_temperature",
+          "parameter": "body_temperature"
+        },
+        {
+          "stepIdentifier": "fatigue",
+          "parameter": "fatigue"
+        },
+        {
+          "stepIdentifier": "nausea_or_vomiting",
+          "parameter": "nausea_or_vomiting"
+        },
+        {
+          "stepIdentifier": "appetite",
+          "parameter": "appetite"
+        },
+        {
+          "stepIdentifier": "diarrhea",
+          "parameter": "diarrhea"
+        },
+        {
+          "stepIdentifier": "bruise_or_bleeding",
+          "parameter": "bruise_or_bleeding"
         },
         {
           "parameter": "schemaID",

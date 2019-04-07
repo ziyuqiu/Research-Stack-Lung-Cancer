@@ -37,18 +37,42 @@ public class DemographicsTemplateResultTransformer implements RSRPFrontEnd {
 //        Integer age = extractResult(parameters,"age");
 //        String zipcode = extractResult(parameters,"zip_code");
 
-        String coffee = extractResult(parameters,"coffee");
-        String food = extractResult(parameters,"food");
+//        String coffee = extractResult(parameters,"coffee");
+//        String food = extractResult(parameters,"food");
+
+        String headache = extractResult(parameters, "headache");
+        String cough = extractResult(parameters, "cough");
+        String shortnessOfBreath = extractResult(parameters, "shortness_of_breath");
+        String cigarettesCount = extractResult(parameters, "cigarettes_count");
+        String bodyTemperature = extractResult(parameters, "body_temperature");
+
+        String fatigue = extractResult(parameters, "fatigue");
+        String nauseaOrVomiting = extractResult(parameters, "nausea_or_vomiting");
+        String appetite = extractResult(parameters, "appetite");
+        String diarrhea = extractResult(parameters, "diarrhea");
+        String bruiseOrBleeding = extractResult(parameters, "bruise_or_bleeding");
 
         DemographicsTemplateResult result = new DemographicsTemplateResult(
                 UUID.randomUUID(),
                 taskIdentifier,
                 taskRunUUID,
-                coffee,
-                food
+//                coffee,
+//                food
+                headache,
+                cough,
+                shortnessOfBreath,
+                cigarettesCount,
+                bodyTemperature,
+                fatigue,
+                nauseaOrVomiting,
+                appetite,
+                diarrhea,
+                bruiseOrBleeding
         );
 
-        StepResult firstStepResult = (StepResult) (parameters.get("coffee") != null ? parameters.get("coffee") : parameters.get("food"));
+        StepResult firstStepResult = (StepResult) (parameters.get("headache") != null ? parameters.get("headache") : parameters.get("body_temperature"));
+
+        //StepResult firstStepResult = (StepResult) (parameters.get("coffee") != null ? parameters.get("coffee") : parameters.get("food"));
         //StepResult lastStepResult = (StepResult) (parameters.get("employment") != null ? parameters.get("employment") : parameters.get("gender"));
 
         if (firstStepResult != null) {

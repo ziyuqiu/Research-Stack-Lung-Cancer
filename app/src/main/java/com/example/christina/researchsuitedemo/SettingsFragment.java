@@ -30,8 +30,9 @@ public class SettingsFragment extends PreferenceFragmentCompat implements
     public static final String KEY_YADL_SPOT_ASSESSMENT = "yadl_spot_assessment";
     public static final String KEY_DEMOGRAPHICS_ASSESSMENT = "demographics_assessment";
     public static final String KEY_PAM_ASSESSMENT = "pam_assessment";
-    public static final String KEY_YOUR_DEMO_ASSESSMENT = "your_demo_assessment";
-    public static final String KEY_YOUR_AVA_ASSESSMENT = "your_ava_assessment";
+    public static final String KEY_SURVEY = "survey";
+    //public static final String KEY_YOUR_DEMO_ASSESSMENT = "your_demo_assessment";
+    //public static final String KEY_YOUR_AVA_ASSESSMENT = "your_ava_assessment";
 
     @Override
     public void onCreatePreferences(Bundle bundle, String s)
@@ -86,6 +87,10 @@ public class SettingsFragment extends PreferenceFragmentCompat implements
             }
             else if (key.equals(KEY_DEMOGRAPHICS_ASSESSMENT)){
                 RSActivityManager.get().queueActivity(getActivity(), "DemographicsSurvey", true);
+                return true;
+            }
+            else if (key.equals(KEY_SURVEY)){
+                RSActivityManager.get().queueActivity(getActivity(), "DemographicsTemplate", true);
                 return true;
             }
 //            else if (key.equals(KEY_YOUR_DEMO_ASSESSMENT)){
