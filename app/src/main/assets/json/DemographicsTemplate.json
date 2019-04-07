@@ -8,6 +8,13 @@
     "identifier": "template",
     "elements":[
       {
+        "identifier"   : "introduction",
+        "type"         : "instruction",
+        "title"        : "Welcome to the Lung Cancer Health Assessment",
+        "text"         : "We are doing research on lung cancer, which is very common in this country. This research will involve a daily app interaction. Your participation in this research is entirely voluntary. It is your choice whether to participate or not. Whether you choose to participate or not, all the services you receive at this clinic will continue and nothing will change. We will not be sharing the identity of those participating in the research.  The information that we collect from this research project will be kept confidential. Information about you that will be collected during the research will be put away and no-one but the researchers will be able to see it.
+        "
+      },
+      {
         "identifier": "headache",
         "type": "singleChoiceText",
         "text": "Do you have a headache?",

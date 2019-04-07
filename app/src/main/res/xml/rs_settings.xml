@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <Preference
+    <!-- <Preference
         android:key="yadl_full_assessment"
-        android:title="Take YADL Full Assessment"/>
+        android:title="Take YADL Full Assessment"/> -->
 
     <Preference
         android:key="yadl_spot_assessment"
-        android:title="Take YADL Spot Assessment"/>
+        android:title="Record Sputum Color"/>
 
-    <Preference
+    <!-- <Preference
         android:key="pam_assessment"
-        android:title="Take PAM Assessment"/>
+        android:title="Take PAM Assessment"/> -->
 
-    <Preference
+    <!-- <Preference
         android:key="demographics_assessment"
-        android:title="Take Demographics Assessment"/>
+        android:title="Take Demographics Assessment"/> -->
 
     <Preference
         android:key="survey"
-        android:title="Take Daily Survey"/>
+        android:title="Complete Daily Health Assessment"/>
 
     <!-- Preference
         android:key="your_demo_assessment"

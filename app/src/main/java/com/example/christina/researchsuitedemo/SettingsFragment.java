@@ -73,18 +73,18 @@ public class SettingsFragment extends PreferenceFragmentCompat implements
                 RSActivityManager.get().queueActivity(getActivity(), "NotificationDateSurvey", true);
                 return true;
             }
-            else if (key.equals(KEY_YADL_FULL_ASSESSMENT)){
-                RSActivityManager.get().queueActivity(getActivity(), "YADLFullSurvey", true);
-                return true;
-            }
+//            else if (key.equals(KEY_YADL_FULL_ASSESSMENT)){
+//                RSActivityManager.get().queueActivity(getActivity(), "YADLFullSurvey", true);
+//                return true;
+//            }
             else if (key.equals(KEY_YADL_SPOT_ASSESSMENT)){
                 RSActivityManager.get().queueActivity(getActivity(), "YADLSpotSurvey", true);
                 return true;
             }
-            else if (key.equals(KEY_PAM_ASSESSMENT)){
-                RSActivityManager.get().queueActivity(getActivity(), "PAMSurvey", true);
-                return true;
-            }
+//            else if (key.equals(KEY_PAM_ASSESSMENT)){
+//                RSActivityManager.get().queueActivity(getActivity(), "PAMSurvey", true);
+//                return true;
+//            }
             else if (key.equals(KEY_DEMOGRAPHICS_ASSESSMENT)){
                 RSActivityManager.get().queueActivity(getActivity(), "DemographicsSurvey", true);
                 return true;

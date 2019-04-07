@@ -8,12 +8,12 @@
     "identifier": "yadl_spot_assessment",
     "elements"   : [
 
-      {
-        "identifier"   : "introduction",
-        "type"         : "instruction",
-        "title"        : "Welcome to the YADL Spot Assessment",
-        "text"         : "Please select the activities that you have trouble with."
-      },
+//      {
+//        "identifier"   : "introduction",
+//        "type"         : "instruction",
+//        "title"        : "Welcome to the YADL Spot Assessment",
+//        "text"         : "Please select the activities that you have trouble with."
+//      },
       {
         "identifier": "yadl_spot",
         "type": "YADLSpotAssessment",
