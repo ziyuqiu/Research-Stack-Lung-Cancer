@@ -27,7 +27,6 @@ public class OnboardingActivity extends RSActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         RSActivityManager.get().queueActivity(this, "NotificationDateSurvey", true);
         RSActivityManager.get().queueActivity(this, "DemographicsSurvey", true);
         RSActivityManager.get().queueActivity(this, "PAMSurvey", true);
